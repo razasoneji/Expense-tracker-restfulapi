@@ -16,17 +16,14 @@ public class CategoryService {
     @Autowired
     private CategoryRepository categoryRepository;
 
-
     public Category saveCategory(Category category) {
 
         return categoryRepository.save(category);
     }
 
-
     public List<Category> findAllCategory() {
         return categoryRepository.findAll();
     }
-
 
     public Optional<Category> findByIdCategory(int userId) {
         return categoryRepository.findById(userId);
@@ -46,10 +43,5 @@ public class CategoryService {
     public void deleteByIdCategory(int userId) {
         categoryRepository.deleteById(userId);
     }
-//locho
-    //locha
-    //locha
-//    public List<Expense> allexpensesbycategory(int categoryId) {
-//        return categoryRepository.expensesbycategory(categoryId);
-//    }
+
 }
